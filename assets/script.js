@@ -26,15 +26,25 @@ $(".hours").each(function(index){
         $(this).addClass("present")
     }
 })
-var dataInput = localStorage.getItem("#9")
-
-    $(".saveBtn").on("click", function () {
-    $("#9").val(localStorage.getItem("#9"))
-    localStorage.setItem("9am", dataInput)
+    var retrievedInput = localStorage.getItem("woop")
+    console.log(retrievedInput)
+    $("#9").html(retrievedInput)
+    $(".btn").on("click", function () {
+    var storedInput = $(this).prev(".textarea").val(retrievedInput)
+    var divKey = $(this).attr("id")
+    console.log(divKey)
+    console.log(storedInput)
+    localStorage.setItem(divKey, storedInput)
     })
 
 
 
+
+
+
+
+        //find a way to traverse the dom using jquery to grab textarea value next to button that is clicked
+        //think .siblings .prev maybe there is another solution? resturcture html maybe a bettter method?
 
 
 // var possibleTimes = [9, 10, 11, 12, 13, 14, 15, 16, 17]
