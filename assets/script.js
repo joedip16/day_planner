@@ -89,36 +89,4 @@ $(".hours").each(function(index){
     localStorage.setItem("17pm", storedInput17)
     })
 
-
-
-
-
-
-// var possibleTimes = [9, 10, 11, 12, 13, 14, 15, 16, 17]
-
-
-
-// function colorPicker(){
-// for(var i = 0; i < possibleTimes.length; i++){
-//     var hourRow = 21
-//     console.log(hourRow)
-    // if (currentHour > hourRow){
-    //     console.log("In the past")
-    //     $(".10am").addClass("past")
-        
-    // }
-    // else if(currentHour < hourRow){
-    //     console.log("In the future")
-    //     $(".10am").addClass("future")
-    // }
-    // else{
-    //     console.log("Right now!")
-    //     $(".10am").addClass("present")
-    // }
-// }
-
-
-
-// }
-
 });
